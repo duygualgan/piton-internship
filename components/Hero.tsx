@@ -14,7 +14,7 @@ const colors = {
 const Hero = () => {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-primary">
-      <svg className="absolute top-0 left-0" width="100%" height="100%">
+      <svg className="absolute top-0 left-0 w-full h-full">
         <ellipse
           cx="20%"
           cy="25%"
@@ -56,20 +56,20 @@ const Hero = () => {
 
       <div className="relative w-full flex flex-col items-center justify-end px-4 mt-40">
         <div className="absolute flex flex-col items-center justify-center max-w-[1121px] max-h-[220px] w-full">
-          <h1 className="text-black text-8xl font-bold text-center">
+          <h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-bold text-center leading-tight">
             Let’s create something great together.
           </h1>
         </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 flex justify-center">
-        <div className="flex flex-row space-x-4 w-[1468px] h-[388px]">
-          <Image src={hand1} alt="Hand 1" width={244} height={388} />
-          <Image src={hand2} alt="Hand 2" width={244} height={388} />
-          <Image src={hand3} alt="Hand 3" width={244} height={388} />
-          <Image src={hand4} alt="Hand 4" width={244} height={388} />
-          <Image src={hand5} alt="Hand 5" width={244} height={388} />
-          <Image src={hand6} alt="Hand 6" width={244} height={388} />
+        <div className="flex flex-row justify-center space-x-4 w-full max-w-[1468px] h-auto">
+          <Image src={hand1} alt="Hand 1" className="w-[16.66%] h-auto" />
+          <Image src={hand2} alt="Hand 2" className="w-[16.66%] h-auto" />
+          <Image src={hand3} alt="Hand 3" className="w-[16.66%] h-auto" />
+          <Image src={hand4} alt="Hand 4" className="w-[16.66%] h-auto" />
+          <Image src={hand5} alt="Hand 5" className="w-[16.66%] h-auto" />
+          <Image src={hand6} alt="Hand 6" className="w-[16.66%] h-auto" />
         </div>
       </div>
     </div>
