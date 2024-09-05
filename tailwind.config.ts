@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: '#FDCA09',   
+        secondary: '#FEBC0A', 
+        black1: '#101010',    
+        background: '#f4f4f9', 
+      },
+      fontFamily:{
+        manrope: ["Manrope", "sans-serif"],
       },
     },
   },
